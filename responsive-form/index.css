@@ -1,0 +1,75 @@
+/* 
+Black: #1B1B1B
+Green: #00C896
+*/
+
+body {
+	background-image: linear-gradient(145deg, #1b1b1b 0%, #00c896 100%);
+	height: 100vh;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		display: unset;
+		justify-content: unset;
+		align-items: unset;
+	}
+}
+
+.image-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 70px;
+}
+
+.form-submit-btn {
+	width: 100%;
+	border-radius: 7px;
+	background-color: #00c896;
+}
+
+.techover-form {
+	background-color: #ffffffbf;
+	border-radius: 10px;
+	padding: 30px 20px !important; /* Needs to override the col system */
+}
+
+.vad-du-vill {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* label color */
+.input-field label {
+	color: #1b1b1b;
+}
+/* label focus color */
+.input-field input[type='text']:focus + label {
+	color: #1b1b1b;
+}
+/* label underline focus color */
+.input-field input[type='text']:focus {
+	border-bottom: 1px solid #1b1b1b;
+	box-shadow: 0 1px 0 0 #1b1b1b;
+}
+/* valid color */
+.input-field input[type='text'].valid {
+	border-bottom: 1px solid #1b1b1b;
+	box-shadow: 0 1px 0 0 #1b1b1b;
+}
+/* invalid color */
+.input-field input[type='text'].invalid {
+	border-bottom: 1px solid #1b1b1b;
+	box-shadow: 0 1px 0 0 #1b1b1b;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #1b1b1b;
+}
